@@ -7,12 +7,20 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:606230751387:android:7b861fb09e63298561be3e",
+        "mobilesdk_app_id": "1:606230751387:android:fc06182f0954397c61be3e",
         "android_client_info": {
-          "package_name": "com.example.liveasy_task"
+          "package_name": "com.example.liveasy_task_application"
         }
       },
       "oauth_client": [
+        {
+          "client_id": "606230751387-lec6efbcrnp3pf0gnl4u63b7pl3f67b8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.liveasy_task_application",
+            "certificate_hash": "6883d64405fbbd27f6ac02f43f0d3f2885c393c2"
+          }
+        },
         {
           "client_id": "606230751387-67fpe5rmaocpob903pfpdd8l998q96ms.apps.googleusercontent.com",
           "client_type": 3

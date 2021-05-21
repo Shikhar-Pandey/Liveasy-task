@@ -1,11 +1,10 @@
-import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:liveasy_task/selectProfile.dart';
 import 'package:pinput/pin_put/pin_put.dart';
-import 'package:liveasy_task/database.dart';
+
 
 class VerifyPhone extends StatefulWidget {
   final String mobile;
@@ -17,7 +16,6 @@ class VerifyPhone extends StatefulWidget {
 }
 
 class _VerifyPhoneState extends State<VerifyPhone> {
-  DatabaseMethods databasemethods = DatabaseMethods();
   TextEditingController otp = TextEditingController();
   final FocusNode _pinPutFocusNode = FocusNode();
   final BoxDecoration pinPutDecoration = BoxDecoration(
@@ -151,8 +149,6 @@ class _VerifyPhoneState extends State<VerifyPhone> {
           GestureDetector(
             onTap: () {
               signInWithPhoneNumber();
-              Map<String, String> test = {"a": "a"};
-              databasemethods.sending(test);
             },
             child: Container(
               color: Colors.indigo[900].withOpacity(0.9),
